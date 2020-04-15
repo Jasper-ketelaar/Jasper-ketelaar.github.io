@@ -21,7 +21,7 @@
     "body": {
       "background": {
         "type": "html",
-        "url": "https://www.grandcruwijnen.nl",
+        "url": "https://test.grandcruwijnen.nl.mage2cloud.nl/",
         "action": {
           "trigger": "navigate"
         }            
