@@ -1,21 +1,17 @@
 {
   "$jason": {
     "head": {
-      "title": "...",
+      "title": "Grandcruwijnen",
       "description": "...",
       "icon": "...",
       "offline": "true",
       "styles": {
-        
       },
       "actions": {
-        
       },
       "templates": {
-        
       },
       "data": {
-        
       }
     },
     "body": {
@@ -23,8 +19,8 @@
         "type": "html",
         "url": "https://test.grandcruwijnen.nl.mage2cloud.nl/",
         "action": {
-          "trigger": "navigate"
-        }            
+          "type": "$default"
+        }
       }
     }
   }
