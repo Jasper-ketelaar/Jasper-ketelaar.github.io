@@ -11,10 +11,10 @@
         "handleLink": [
           {
             "{{#if $jason.url.indexOf('grandcruwijnen') == -1 }}": {
-              "type": "$href",
+              "type": "$util.banner",
               "options": {
-                "url": "{{$jason.url}}",
-                "view": "web"
+                "title": "{{$jason.url}}",
+                "description": "web"
               }
             }
           },
