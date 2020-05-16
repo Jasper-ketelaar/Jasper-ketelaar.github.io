@@ -3,18 +3,14 @@
     "head": {
       "title": "Grandcruwijnen",
       "description": "Online wijn kopen | Kies uit 2500+ kwaliteitswijnen - Grandcruwijnen  - Grandcruwijnen.nl",
-      "icon": "...",
-      "offline": "true",
-      "styles": {
-      },
       "actions": {
         "handleLink": [
           {
-            "{{#if $jason.url.indexOf('grandcruwijnen') == -1 }}": {
-              "type": "$util.banner",
+            "{{#if $jason.url.indexOf('abnamro.nl/portalserver') != -1 }}": {
+              "type": "$href",
               "options": {
-                "title": "{{$jason.url}}",
-                "description": "web"
+                "url": "{{$jason.url}}",
+                "view": "app"
               }
             }
           },
@@ -24,12 +20,7 @@
             }
           }
         ]
-      },
-      "templates": {
-      },
-      "data": {
-      },
-
+      }
     },
     "body": {
       "background": {
@@ -37,6 +28,33 @@
         "url": "https://test.grandcruwijnen.nl.mage2cloud.nl/",
         "action": {
           "trigger": "handleLink"
+        }
+      },
+      "footer": {
+        "tabs": {
+          "style": {
+            "background": "rgba(255,255,255,0.8)",
+            "color:disabled": "#cecece",
+            "color": "#009efa"
+          },
+          "items": [
+            {
+              "image": "file://home.png",
+              "href": {
+                "url": "file://app.json",
+                "transition": "modal"
+              }
+            },
+            {
+              "image": "file://home.png",
+              "action": {
+                "type": "$media.camera",
+                "options": {
+                  "type": "photo"
+                }
+              }
+            }
+          ]
         }
       }
     }
