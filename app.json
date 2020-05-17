@@ -25,7 +25,7 @@
     "body": {
       "background": {
         "type": "html",
-        "url": "https://test.grandcruwijnen.nl.mage2cloud.nl/",
+        "url": "https://www.grandcruwijnen.nl/",
         "action": {
           "trigger": "handleLink"
         }
