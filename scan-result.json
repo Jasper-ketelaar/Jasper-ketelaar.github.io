@@ -32,7 +32,29 @@
               "type": "$default"
             }
           }
-        ]
+        ],
+        "handleEan": {
+          "type": "$network.request",
+          "options": {
+            "url": "https://stable.grandcruwijnen.nl/nl/rest/V1/ean/{{$jason.ean}}"
+          },
+          "success": {
+            "type": "$href",
+            "options": {
+              "url": "https://jasper-ketelaar.github.io/scan-result.json",
+              "options": {
+                "url": "{{$jason.result}}"
+              }
+            }
+          },
+          "error": {
+            "type": "$util.banner",
+            "options": {
+              "title": "Error",
+              "description": "Something went wrong"
+            }
+          }
+        }
       },
       "templates": {
         "body": {
