@@ -20,6 +20,9 @@
         "type": "camera",
         "options": {
           "device": "back"
+        },
+        "action": {
+          "type": "$back"
         }
       },
       "footer": {
