@@ -19,7 +19,27 @@
               "type": "$default"
             }
           }
-        ]
+        ],
+        "handleEan": {
+          "type": "$network.request",
+          "options": {
+            "url": "https://stable.grandcruwijnen.nl/rest/V1/ean/{{$jason.ean}}"
+          },
+          "success": {
+            "type": "$util.banner",
+            "options": {
+              "title": "Your result",
+              "description": "{{$jason.result}}"
+            }
+          },
+          "error": {
+            "type": "$util.banner",
+            "options": {
+              "title": "Error",
+              "description": "Something went wrong"
+            }
+          }
+        }
       },
       "templates": {
 
@@ -56,16 +76,12 @@
               "action": {
                 "type": "$href",
                 "options": {
-                  "url": "https://jasper-ketelaar.github.io/scanner.json",
-                  "transition": "modal"
+                  "url": "https://jasper-ketelaar.github.io/scanner.json"
                 },
                 "success": {
-                  "type": "$href",
+                  "trigger": "handleEan",
                   "options": {
-                    "url": "https://jasper-ketelaar.github.io/scan-result.json",
-                    "options": {
-                      "url": "https://stable.grandcruwijnen.nl/"
-                    }
+                    "ean": "{{$jason.ean}}"
                   }
                 }
               }
