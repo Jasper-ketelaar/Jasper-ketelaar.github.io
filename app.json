@@ -26,10 +26,12 @@
             "url": "https://stable.grandcruwijnen.nl/rest/V1/ean/{{$jason.ean}}"
           },
           "success": {
-            "type": "$util.banner",
+            "type": "$href",
             "options": {
-              "title": "Your result",
-              "description": "{{$jason.result}}"
+              "url": "https://jasper-ketelaar.github.io/scan-result.json",
+              "options": {
+                "url": "{{$jason.result}}"
+              }
             }
           },
           "error": {
