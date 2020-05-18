@@ -38,7 +38,7 @@
             "type": "$util.banner",
             "options": {
               "title": "Error",
-              "description": "Something went wrong {{$jason.ean}}"
+              "description": "Something went wrong"
             }
           }
         }
@@ -78,8 +78,7 @@
               "action": {
                 "type": "$href",
                 "options": {
-                  "url": "https://jasper-ketelaar.github.io/scanner.json",
-                  "transition": "fullscreen"
+                  "url": "https://jasper-ketelaar.github.io/scanner.json"
                 },
                 "success": {
                   "trigger": "handleEan",

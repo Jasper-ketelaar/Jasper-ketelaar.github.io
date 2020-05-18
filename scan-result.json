@@ -4,7 +4,7 @@
       "title": "Grandcruwijnen",
       "description": "Online wijn kopen | Kies uit 2500+ kwaliteitswijnen - Grandcruwijnen  - Grandcruwijnen.nl",
       "actions": {
-        "$show": {
+        "$load": {
           "type": "$set",
           "options": {
             "url": [ {
@@ -66,20 +66,17 @@
                   "action": {
                     "type": "$href",
                     "options": {
-                      "url": "https://jasper-ketelaar.github.io/scanner.json",
-                      "transition": "modal"
+                      "url": "https://jasper-ketelaar.github.io/scanner.json"
                     },
                     "success": {
-                      "type": "$href",
+                      "trigger": "handleEan",
                       "options": {
-                        "url": "https://jasper-ketelaar.github.io/app.json",
-                        "options": {
-                          "url": "www.grandcruwijnen.nl/{{$jason.ean}}"
-                        }
+                        "ean": "{{$jason.ean}}"
                       }
                     }
                   }
                 }
+
               ]
             }
           }

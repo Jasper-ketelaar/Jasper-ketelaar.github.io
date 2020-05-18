@@ -43,8 +43,8 @@
               "type": "label",
               "text": "Wij willen u graag helpen met eventuele vragen die u heeft. Hieronder staan alle manieren beschreven waarop u contact kunt opnemen met ons support team!",
               "style": {
-                "padding_top": "100",
-                "padding_bottom": "150",
+                "padding_top": "50",
+                "padding_bottom": "10",
                 "padding_left": "25",
                 "padding_right": "25",
                 "size": "22"
@@ -197,9 +197,17 @@
 
             {
               "image": "https://jasper-ketelaar.github.io/scan.png",
-              "href": {
-                "url": "https://jasper-ketelaar.github.io/scanner.json",
-                "transition": "fullscreen"
+              "action": {
+                "type": "$href",
+                "options": {
+                  "url": "https://jasper-ketelaar.github.io/scanner.json"
+                },
+                "success": {
+                  "trigger": "handleEan",
+                  "options": {
+                    "ean": "{{$jason.ean}}"
+                  }
+                }
               }
             }
 
