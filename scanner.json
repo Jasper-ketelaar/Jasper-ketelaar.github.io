@@ -8,12 +8,9 @@
           "type": "$vision.scan"
         },
         "$vision.onscan": {
-          "type": "$href",
+          "type": "$ok",
           "options": {
-            "url": "https://jasper-ketelaar.github.io/scan-result.json",
-            "options": {
-              "url": "https://stable.grandcruwijnen.nl/"
-            }
+            "ean": "{{$jason.content}}"
           }
         }
       }
