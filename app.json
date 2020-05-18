@@ -83,7 +83,14 @@
                   "options": {
                     "ean": "{{$jason.ean}}"
                   }
-                }
+                },
+                "error": {
+      "type": "$util.banner",
+      "options": {
+        "title": "Error",
+        "description": "Something went wrong."
+      }
+    }
               }
             }
 

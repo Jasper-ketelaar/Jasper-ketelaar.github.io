@@ -16,31 +16,6 @@
       }
     },
     "body": {
-      "sections": [{
-        "items": [
-          {
-            "type": "horizontal",
-            "action":{
-              "type": "$back"
-            },
-            "style": {
-              "background": "white"
-            },
-            "components": [
-              {
-                "type": "label",
-                "text": "X",
-                "class": "bold"
-              },
-              {
-                "type": "label",
-                "text": "Ga terug",
-                "class": "bold"
-              }
-            ]
-          }
-        ]
-      }],
       "background": {
         "type": "camera",
         "options": {
