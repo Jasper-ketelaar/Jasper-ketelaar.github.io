@@ -4,7 +4,7 @@
       "title": "Grandcruwijnen",
       "description": "Online wijn kopen | Kies uit 2500+ kwaliteitswijnen - Grandcruwijnen  - Grandcruwijnen.nl",
       "actions": {
-        "$load": {
+        "$show": {
           "type": "$set",
           "options": {
             "url": [ {
