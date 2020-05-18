@@ -23,7 +23,7 @@
         "handleEan": {
           "type": "$network.request",
           "options": {
-            "url": "https://stable.grandcruwijnen.nl/rest/V1/ean/{{$jason.ean}}"
+            "url": "https://stable.grandcruwijnen.nl/nl/rest/V1/ean/{{$jason.ean}}"
           },
           "success": {
             "type": "$href",
