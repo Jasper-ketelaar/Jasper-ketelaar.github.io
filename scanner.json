@@ -22,8 +22,8 @@
           "text": "X Ga terug",
           "class": "bold",
           "style": {
-            "color": "white",
-            "background": "white",
+            "color": "black",
+            "background": "#fff",
             "width": "100%",
             "height": "8%",
             "bottom": "0",
