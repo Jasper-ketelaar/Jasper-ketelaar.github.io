@@ -30,12 +30,18 @@
               {
                 "type": "label",
                 "text": "X",
-                "class": "bold"
+                "class": "bold",
+                 "style": {
+                    "background": "white"
+                 }
               },
               {
                 "type": "label",
                 "text": "Ga terug",
-                "class": "bold"
+                "class": "bold",
+                 "style": {
+                    "background": "white"
+                 }
               }
             ]
           }
