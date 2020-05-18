@@ -32,7 +32,7 @@
                 "text": "X",
                 "class": "bold",
                  "style": {
-                    "background": "white"
+                    "color": "white"
                  }
               },
               {
@@ -40,7 +40,7 @@
                 "text": "Ga terug",
                 "class": "bold",
                  "style": {
-                    "background": "white"
+                    "color": "white"
                  }
               }
             ]
