@@ -1,0 +1,90 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Grandcruwijnen",
+      "description": "Online wijn kopen | Kies uit 2500+ kwaliteitswijnen - Grandcruwijnen  - Grandcruwijnen.nl",
+      "actions": {
+        "$load": {
+          "type": "$set",
+          "options": {
+            "url": [ {
+              "{{#if $params && 'url' in $params}}": "{{$params.url}}"
+            }, {
+              "{{#else}}": "https://stable.grandcruwijnen.nl"
+            }]
+          },
+          "success": {
+            "type": "$render"
+          }
+        },
+        "handleLink": [
+          {
+            "{{#if $jason.url.indexOf('abnamro.nl/portalserver') != -1 }}": {
+              "type": "$href",
+              "options": {
+                "url": "{{$jason.url}}",
+                "view": "app"
+              }
+            }
+          },
+          {
+            "{{#else}}": {
+              "type": "$default"
+            }
+          }
+        ]
+      },
+      "templates": {
+        "body": {
+          "background": {
+            "type": "html",
+            "url": "{{$get.url}}",
+            "action": {
+              "trigger": "handleLink"
+            }
+          },
+          "footer": {
+            "tabs": {
+              "style": {
+                "background": "rgba(255,255,255,0.8)",
+                "color:disabled": "#cecece",
+                "color": "#009efa"
+              },
+              "items": [
+                {
+                  "image": ""https://jasper-ketelaar.github.io/home.png",
+                  "url": ""https://jasper-ketelaar.github.io/app.json"
+                },
+
+                {
+                  "image": ""https://jasper-ketelaar.github.io/phone.png",
+                  "url": ""https://jasper-ketelaar.github.io/contact.json"
+                },
+
+                {
+                  "image": ""https://jasper-ketelaar.github.io/scan.png",
+                  "action": {
+                    "type": "$href",
+                    "options": {
+                      "url": ""https://jasper-ketelaar.github.io/scanner.json",
+                      "transition": "modal"
+                    },
+                    "success": {
+                      "type": "$href",
+                      "options": {
+                        "url": ""https://jasper-ketelaar.github.io/app.json",
+                        "options": {
+                          "url": "www.grandcruwijnen.nl/{{$jason.ean}}"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Grandcruwijnen",
+      "description": "Online wijn kopen | Kies uit 2500+ kwaliteitswijnen - Grandcruwijnen  - Grandcruwijnen.nl",
+      "actions": {
+        "$vision.ready": {
+          "type": "$vision.scan"
+        },
+        "$vision.onscan": {
+          "type": "$ok",
+          "options": {
+            "ean": "{{$jason.content}}"
+          }
+        }
+      }
+    },
+    "body": {
+      "sections": [{
+        "items": [
+          {
+            "type": "horizontal",
+            "action":{
+              "type": "$back"
+            },
+            "style": {
+              "background": "white"
+            },
+            "components": [
+              {
+                "type": "label",
+                "text": "X",
+                "class": "bold"
+              },
+              {
+                "type": "label",
+                "text": "Ga terug",
+                "class": "bold"
+              }
+            ]
+          }
+        ]
+      }],
+      "background": {
+        "type": "camera",
+        "options": {
+          "device": "back"
+        }
+      },
+      "footer": {
+        "tabs": {
+          "style": {
+            "background": "rgba(255,255,255,0.8)",
+            "color:disabled": "#cecece",
+            "color": "#009efa"
+          }
+        }
+      }
+    }
+  }
+}

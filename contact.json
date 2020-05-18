@@ -1,0 +1,211 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Grandcruwijnen",
+      "styles": {
+        "bold": {
+          "font": "HelveticaNeue-CondensedBold",
+          "size": "15"
+        },
+        "normal": {
+          "font": "HelveticaNeue",
+          "size": "12"
+        }
+      },
+      "description": "Online wijn kopen | Kies uit 2500+ kwaliteitswijnen - Grandcruwijnen  - Grandcruwijnen.nl",
+      "actions": {
+        "handleLink": [
+          {
+            "{{#if $jason.url.indexOf('abnamro.nl/portalserver') != -1 }}": {
+              "type": "$href",
+              "options": {
+                "url": "{{$jason.url}}",
+                "view": "app"
+              }
+            }
+          },
+          {
+            "{{#else}}": {
+              "type": "$default"
+            }
+          }
+        ]
+      }
+    },
+    "body": {
+      "header": {
+        "title": "Grandcruwijnen Contact"
+      },
+      "sections": [
+        {
+          "items": [
+            {
+              "type": "label",
+              "text": "Wij willen u graag helpen met eventuele vragen die u heeft. Hieronder staan alle manieren beschreven waarop u contact kunt opnemen met ons support team!",
+              "style": {
+                "padding_top": "100",
+                "padding_bottom": "150",
+                "padding_left": "25",
+                "padding_right": "25",
+                "size": "22"
+              }
+            },
+            {
+              "type": "horizontal",
+              "href": {
+                "url": "https://wa.me/0610834396",
+                "view": "web"
+              },
+              "components": [
+                {
+                  "type": "image",
+                  "url": "https://jasper-ketelaar.github.io/whatsapp.png",
+                  "style": {
+                    "width": "25"
+                  }
+                },
+                {
+                  "type": "label",
+                  "text": "WHATSAPP ONS (+31 (0)6 10834396)",
+                  "class": "bold",
+                  "style": {
+                    "padding_left": "50"
+                  }
+                }
+              ]
+            },
+
+            {
+              "type": "horizontal",
+              "href": {
+                "url": "https://m.me/Grandcruwijnen.nl/",
+                "view": "web"
+              },
+              "components": [
+                {
+                  "type": "image",
+                  "url": "https://jasper-ketelaar.github.io/messenger.png",
+                  "style": {
+                    "width": "25"
+                  }
+                },
+                {
+                  "type": "label",
+                  "text": "FACEBOOK MESSENGER",
+                  "class": "bold",
+                  "style": {
+                    "padding_left": "50"
+                  }
+                }
+              ]
+            },
+
+            {
+              "type": "horizontal",
+              "href": {
+                "url": "tel:+31 (0)78 6450615",
+                "view": "app"
+              },
+              "components": [
+                {
+                  "type": "image",
+                  "url": "https://jasper-ketelaar.github.io/call.png",
+                  "style": {
+                    "width": "25"
+                  }
+                },
+                {
+                  "type": "label",
+                  "text": "BEL ONS (+31 (0)78 6450615)",
+                  "class": "bold",
+                  "style": {
+                    "padding_left": "50"
+                  }
+                }
+              ]
+            },
+
+            {
+              "type": "horizontal",
+              "href": {
+                "url": "mailto:support@grandcruwijnen.nl",
+                "view": "app"
+              },
+              "components": [
+                {
+                  "type": "image",
+                  "url": "https://jasper-ketelaar.github.io/mail.png",
+                  "style": {
+                    "width": "25"
+                  }
+                },
+                {
+                  "type": "label",
+                  "text": "MAIL ONS \n(SUPPORT@GRANDCRUWIJNEN.NL)",
+                  "class": "bold",
+                  "style": {
+                    "padding_left": "50"
+                  }
+                }
+              ]
+            },
+
+            {
+              "type": "horizontal",
+              "href": {
+                "url": "https://goo.gl/maps/oMUVViCAYnYNJ2rP7",
+                "view": "web"
+              },
+              "components": [
+                {
+                  "type": "image",
+                  "url": "https://jasper-ketelaar.github.io/location.png",
+                  "style": {
+                    "width": "25"
+                  }
+                },
+                {
+                  "type": "label",
+                  "text": "BEZOEK ONS",
+                  "class": "bold",
+                  "style": {
+                    "padding_left": "50"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "footer": {
+        "tabs": {
+          "style": {
+            "background": "rgba(255,255,255,0.8)",
+            "color:disabled": "#cecece",
+            "color": "#009efa"
+          },
+          "items": [
+            {
+              "image": "https://jasper-ketelaar.github.io/home.png",
+              "url": "https://jasper-ketelaar.github.io/app.json"
+            },
+
+            {
+              "image": "https://jasper-ketelaar.github.io/phone.png",
+              "url": "https://jasper-ketelaar.github.io/contact.json"
+            },
+
+            {
+              "image": "https://jasper-ketelaar.github.io/scan.png",
+              "href": {
+                "url": "https://jasper-ketelaar.github.io/scanner.json",
+                "transition": "modal"
+              }
+            }
+
+          ]
+        }
+      }
+    }
+  }
+}

@@ -20,12 +20,15 @@
             }
           }
         ]
+      },
+      "templates": {
+
       }
     },
     "body": {
       "background": {
         "type": "html",
-        "url": "https://www.grandcruwijnen.nl/",
+        "url": "https://stable.grandcruwijnen.nl",
         "action": {
           "trigger": "handleLink"
         }
@@ -39,21 +42,35 @@
           },
           "items": [
             {
-              "image": "file://home.png",
-              "href": {
-                "url": "file://app.json",
-                "transition": "modal"
-              }
+              "image": "https://jasper-ketelaar.github.io/home.png",
+              "url": "https://jasper-ketelaar.github.io/app.json"
             },
+
             {
-              "image": "file://home.png",
+              "image": "https://jasper-ketelaar.github.io/phone.png",
+              "url": "https://jasper-ketelaar.github.io/contact.json"
+            },
+
+            {
+              "image": "https://jasper-ketelaar.github.io/scan.png",
               "action": {
-                "type": "$media.camera",
+                "type": "$href",
                 "options": {
-                  "type": "photo"
+                  "url": "https://jasper-ketelaar.github.io/scanner.json",
+                  "transition": "modal"
+                },
+                "success": {
+                  "type": "$href",
+                  "options": {
+                    "url": "https://jasper-ketelaar.github.io/scan-result.json",
+                    "options": {
+                      "url": "https://stable.grandcruwijnen.nl/"
+                    }
+                  }
                 }
               }
             }
+
           ]
         }
       }
