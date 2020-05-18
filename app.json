@@ -78,7 +78,8 @@
               "action": {
                 "type": "$href",
                 "options": {
-                  "url": "https://jasper-ketelaar.github.io/scanner.json"
+                  "url": "https://jasper-ketelaar.github.io/scanner.json",
+                  "transition": "push"
                 },
                 "success": {
                   "trigger": "handleEan",
