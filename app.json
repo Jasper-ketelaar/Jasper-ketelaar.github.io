@@ -79,7 +79,7 @@
                 "type": "$href",
                 "options": {
                   "url": "https://jasper-ketelaar.github.io/scanner.json",
-                  "transition": "modal"
+                  "transition": "fullscreen"
                 },
                 "success": {
                   "trigger": "handleEan",
