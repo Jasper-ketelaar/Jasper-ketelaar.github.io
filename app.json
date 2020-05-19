@@ -94,7 +94,8 @@
             },
 
             {
-              "image": "https://jasper-ketelaar.github.io/scan.png",          
+              "image": "https://jasper-ketelaar.github.io/scan.png",    
+              "text": "Scanner".
               "style": {
                  "height": "21"
                },
