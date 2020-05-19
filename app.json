@@ -79,26 +79,16 @@
           "items": [
             {
               "image": "https://jasper-ketelaar.github.io/home.png",
-              "url": "https://jasper-ketelaar.github.io/app.json",
-              "style": {
-                 "height": "21"
-               }
+              "url": "https://jasper-ketelaar.github.io/app.json"
             },
 
             {
               "image": "https://jasper-ketelaar.github.io/phone.png",
-              "url": "https://jasper-ketelaar.github.io/contact.json",
-              "style": {
-                 "height": "21"
-               }
+              "url": "https://jasper-ketelaar.github.io/contact.json"
             },
 
             {
               "image": "https://jasper-ketelaar.github.io/scan.png",    
-              "text": "Scanner",
-              "style": {
-                 "height": "21"
-               },
               "action": {
                 "type": "$href",
                 "options": {
