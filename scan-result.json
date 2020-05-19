@@ -10,7 +10,7 @@
             "url": [ {
               "{{#if $params && 'url' in $params}}": "{{$params.url}}"
             }, {
-              "{{#else}}": "https://stable.grandcruwijnen.nl"
+              "{{#else}}": "https://www.grandcruwijnen.nl"
             }]
           },
           "success": {
@@ -36,7 +36,7 @@
         "handleEan": {
           "type": "$network.request",
           "options": {
-            "url": "https://stable.grandcruwijnen.nl/nl/rest/V1/ean/{{$jason.ean}}"
+            "url": "https://www.grandcruwijnen.nl/nl/rest/V1/ean/{{$jason.ean}}"
           },
           "success": [
             {
