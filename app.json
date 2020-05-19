@@ -23,7 +23,7 @@
         "handleEan": {
           "type": "$network.request",
           "options": {
-            "url": "https://stable.grandcruwijnen.nl/nl/rest/V1/ean/{{$jason.ean}}"
+            "url": "https://www.grandcruwijnen.nl/nl/rest/V1/ean/{{$jason.ean}}"
           },
           "success": [
             {
@@ -63,7 +63,7 @@
     "body": {
       "background": {
         "type": "html",
-        "url": "https://stable.grandcruwijnen.nl",
+        "url": "https://www.grandcruwijnen.nl",
         "action": {
           "trigger": "handleLink"
         }
