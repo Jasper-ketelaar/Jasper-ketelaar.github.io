@@ -38,15 +38,28 @@
           "options": {
             "url": "https://stable.grandcruwijnen.nl/nl/rest/V1/ean/{{$jason.ean}}"
           },
-          "success": {
-            "type": "$href",
-            "options": {
-              "url": "https://jasper-ketelaar.github.io/scan-result.json",
-              "options": {
-                "url": "{{$jason.result}}"
+          "success": [
+            {
+              "{{#if $jason.error}}": {
+                "type": "$util.alert",
+                "options": {
+                  "title": "Something went wrong",
+                  "description": "{{$jason.result}}"
+                }
+              }
+            },
+            {
+              "{{#else}}": {
+                "type": "$href",
+                "options": {
+                  "url": "https://jasper-ketelaar.github.io/scan-result.json",
+                  "options": {
+                    "url": "{{$jason.result}}"
+                  }
+                }
               }
             }
-          },
+          ],
           "error": {
             "type": "$util.banner",
             "options": {
