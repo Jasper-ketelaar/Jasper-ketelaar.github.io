@@ -79,16 +79,18 @@
           "items": [
             {
               "image": "https://jasper-ketelaar.github.io/home.png",
+              "text": "Home",
               "url": "https://jasper-ketelaar.github.io/app.json"
             },
 
             {
               "image": "https://jasper-ketelaar.github.io/phone.png",
+              "text": "Contact opnemen",
               "url": "https://jasper-ketelaar.github.io/contact.json"
             },
 
             {
-              "image": "https://jasper-ketelaar.github.io/scann.png",
+              "image": "https://jasper-ketelaar.github.io/scan.png",
               "text": "Scan barcode",
               "action": {
                 "type": "$href",
