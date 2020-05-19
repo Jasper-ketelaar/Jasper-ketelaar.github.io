@@ -69,7 +69,8 @@
                 "padding_bottom": "10",
                 "padding_left": "25",
                 "padding_right": "25",
-                "size": "22"
+                "size": "22",
+                "color": "#000000"
               }
             },
             {
@@ -91,7 +92,8 @@
                   "text": "WHATSAPP ONS (+31 (0)6 10834396)",
                   "class": "bold",
                   "style": {
-                    "padding_left": "50"
+                    "padding_left": "50",
+                    "color": "#000000"
                   }
                 }
               ]
@@ -116,7 +118,8 @@
                   "text": "FACEBOOK MESSENGER",
                   "class": "bold",
                   "style": {
-                    "padding_left": "50"
+                    "padding_left": "50",
+                    "color": "#000000"
                   }
                 }
               ]
@@ -141,7 +144,8 @@
                   "text": "BEL ONS (+31 (0)78 6450615)",
                   "class": "bold",
                   "style": {
-                    "padding_left": "50"
+                    "padding_left": "50",
+                    "color": "#000000"
                   }
                 }
               ]
@@ -166,7 +170,8 @@
                   "text": "MAIL ONS \n(SUPPORT@GRANDCRUWIJNEN.NL)",
                   "class": "bold",
                   "style": {
-                    "padding_left": "50"
+                    "padding_left": "50",
+                    "color": "#000000"
                   }
                 }
               ]
@@ -191,7 +196,8 @@
                   "text": "BEZOEK ONS",
                   "class": "bold",
                   "style": {
-                    "padding_left": "50"
+                    "padding_left": "50",
+                    "color": "#000000"
                   }
                 }
               ]
