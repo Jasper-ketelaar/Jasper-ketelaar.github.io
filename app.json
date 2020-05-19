@@ -95,7 +95,7 @@
 
             {
               "image": "https://jasper-ketelaar.github.io/scan.png",    
-              "text": "Scanner".
+              "text": "Scanner",
               "style": {
                  "height": "21"
                },
