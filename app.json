@@ -79,7 +79,6 @@
           "items": [
             {
               "image": "https://jasper-ketelaar.github.io/home.png",
-              "text": "Home",
               "url": "https://jasper-ketelaar.github.io/app.json",
               "style": {
                  "height": "21"
@@ -88,7 +87,6 @@
 
             {
               "image": "https://jasper-ketelaar.github.io/phone.png",
-              "text": "Contact opnemen",
               "url": "https://jasper-ketelaar.github.io/contact.json",
               "style": {
                  "height": "21"
@@ -96,8 +94,7 @@
             },
 
             {
-              "image": "https://jasper-ketelaar.github.io/scan.png",
-              "text": "Scan barcode",
+              "image": "https://jasper-ketelaar.github.io/scan.png",          
               "style": {
                  "height": "21"
                },
